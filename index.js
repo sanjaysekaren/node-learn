@@ -1,8 +1,8 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 
-const app = express()
-app.use(bodyParser.json({ type: "*/*" }))
-require("./Routes/AuthRoutes")(app);
+const app1 = express()
+app1.use(bodyParser.json({ type: "*/*" }))
+require("./Routes/AuthRoutes")(app1);
 
-app.listen(3000)
+app1.listen(3000)
